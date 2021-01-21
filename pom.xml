@@ -23,29 +23,43 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				<cloudHubDeployment>
-		            <uri>https://anypoint.mulesoft.com</uri>
-		            <muleVersion>4.2.0</muleVersion>
-		            <username>mopurupenchalatarunnovartis</username>
-		            <password>Varun@3010</password>
-		            <applicationName>mulesdemo</applicationName>
-		            <environment>test</environment>
-					<workerType>MICRO</workerType>
-		            <properties>
-		                <key>value</key>
-		            </properties>
-		        </cloudHubDeployment>
-				</configuration>
-			</plugin>
+			</plugin>			
 		</plugins>
 	</build>
+	
+	<profile>
+  <id>cloudhub</id>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.mule.tools.maven</groupId>
+        <artifactId>mule-maven-plugin</artifactId>
+        <configuration>
+          <deploymentType>cloudhub</deploymentType>
+          <muleVersion>${mule.version}</muleVersion> 
+          <username>${anypoint.username}</username> 
+          <password>${anypoint.password}</password> 
+          <applicationName>${artifactId}</applicationName>
+          <environment>${cloundhub.env}</environment> 
+          <businessGroup>${anypoint.businessGroup}</businessGroup>
+          <region>${cloudhub.region}</region>
+          <uri>${anypoint.uri}</uri> 
+          <workerType>${cloudhub.workerType}</workerType>
+          <workers>${cloudhub.workers}</workers>
+        </configuration>
+        <executions>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</profile>
 	
 	<distributionManagement>
     <repository>
