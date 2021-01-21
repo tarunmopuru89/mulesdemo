@@ -71,6 +71,8 @@
         </dependency>
 	</dependencies>
 
+
+
 	<repositories>
           <repository>
             <id>anypoint-exchange-v2</id>
@@ -95,6 +97,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+			<pluginRepository>
+			<id>mule-public</id>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		</pluginRepository>
     </pluginRepositories>
 	
 
