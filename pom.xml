@@ -31,13 +31,15 @@
 				<extensions>true</extensions>
 				<configuration>
 				<CloudHubDeployment> 
-          <muleVersion>${mule.version}</muleVersion> 
+          <muleVersion>${mule.version}</muleVersion>
+		  <uri>${anypoint.uri}</uri>		  
           <username>${anypoint.username}</username> 
           <password>${anypoint.password}</password>          
           <environment>${cloudhub.env}</environment> 
           <businessGroup>${anypoint.businessGroup}</businessGroup>
           <region>${cloudhub.region}</region>
           <uri>${anypoint.uri}</uri> 
+		  <applicationName>${applicationName}</applicationName>
           <workerType>${cloudhub.workerType}</workerType>
           <workers>${cloudhub.workers}</workers>
 		  </CloudHubDeployment>
