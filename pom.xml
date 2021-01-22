@@ -31,6 +31,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<CloudHubDeployment> 
+				<deploymentType>CloudHub<deploymentType>
           <muleVersion>${mule.version}</muleVersion>
 		  <uri>${anypoint.uri}</uri>		  
           <username>${anypoint.username}</username> 
