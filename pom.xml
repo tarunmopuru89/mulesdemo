@@ -30,7 +30,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				  <deploymentType>CloudHub<deploymentType>
+				  <deploymentType>CloudHub</deploymentType>
 				  <muleVersion>${mule.maven.plugin.version}</muleVersion>
 				  <uri>${anypoint.uri}</uri>		  
 				  <username>${anypoint.username}</username> 
