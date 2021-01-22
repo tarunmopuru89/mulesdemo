@@ -30,21 +30,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<CloudHubDeployment> 
-				<deploymentType>CloudHub<deploymentType>
-          <muleVersion>${mule.version}</muleVersion>
-		  <uri>${anypoint.uri}</uri>		  
-          <username>${anypoint.username}</username> 
-          <password>${anypoint.password}</password>          
-          <environment>${cloudhub.env}</environment> 
-          <businessGroup>${anypoint.businessGroup}</businessGroup>
-          <region>${cloudhub.region}</region>
-          <uri>${anypoint.uri}</uri> 
-		  <applicationName>${applicationName}</applicationName>
-          <workerType>${cloudhub.workerType}</workerType>
-          <workers>${cloudhub.workers}</workers>
-		  </CloudHubDeployment>
-        </configuration>
+				  <deploymentType>CloudHub<deploymentType>
+				  <muleVersion>${mule.maven.plugin.version}</muleVersion>
+				  <uri>${anypoint.uri}</uri>		  
+				  <username>${anypoint.username}</username> 
+				  <password>${anypoint.password}</password>          
+				  <environment>${cloudhub.env}</environment> 
+				  <businessGroup>${anypoint.businessGroup}</businessGroup>
+				  <region>${cloudhub.region}</region>
+				  <uri>${anypoint.uri}</uri> 
+				  <applicationName>${applicationName}</applicationName>
+				  <workerType>${cloudhub.workerType}</workerType>
+				  <workers>${cloudhub.workers}</workers>
+				</configuration>
 			</plugin>
 		</plugins>	
 	</build>
