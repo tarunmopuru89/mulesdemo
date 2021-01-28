@@ -31,15 +31,15 @@
 				<extensions>true</extensions>
 				<configuration>
 				  <deploymentType>CloudHub</deploymentType>
-				  <muleVersion>${mule.maven.plugin.version}</muleVersion>
-				  <uri>${anypoint.uri}</uri>		  
-				  <username>${anypoint.username}</username> 
-				  <password>${anypoint.password}</password>          
-				  <environment>${cloudhub.env}</environment> 
-				  <region>${cloudhub.region}</region>
-				  <applicationName>${applicationName}</applicationName>
-				  <workerType>${cloudhub.workerType}</workerType>
-				  <workers>${cloudhub.workers}</workers>
+				  <muleVersion>4.3.0</muleVersion>
+				  <uri>http://anypoint.mulesoft.com</uri>		  
+				  <username>mopurupenchalatarunnovartis</username> 
+				  <password>Varunmopuru@3010</password>          
+				  <environment>test</environment> 
+				  <region>us-east-1</region>
+				  <applicationName>mulesdemo</applicationName>
+				  <workerType>Micro</workerType>
+				  <workers>1</workers>
 				</configuration>
 			</plugin>
 		</plugins>	
