@@ -20,6 +20,35 @@
 
 	<build>
 		<plugins>
+		<plugin>
+			       <groupId>org.mule.tools.maven</groupId>
+			       <artifactId>mule-maven-plugin</artifactId>
+			       <version>${mule.maven.plugin.version}</version>
+			       <extensions>true</extensions>
+			         <configuration>
+			           <cloudHubDeployment>
+			             <uri>https://anypoint.mulesoft.com</uri>;
+			             <muleVersion>${app.runtime}</muleVersion>
+						 <deploymentTimeout>300000</deploymentTimeout>
+			             <username>mopurutarun</username>
+			             <password>Shaha@1103</password>
+			             <applicationName>deploymule</applicationName>
+			             <workers>1</workers>
+			             <workerType>Micro</workerType>
+			             <environment>DeployTest</environment>
+			             <businessGroup>97c78d17-bb48-4f76-abb4-e95374cf3578</businessGroup>
+			           </cloudHubDeployment>
+			         <executions>
+			           <execution>
+			             <id>deploy</id>
+			             <phase>deploy</phase>
+			             <goals>
+			               <goal>deploy</goal>
+			             </goals>
+			           </execution>
+			         </executions>
+			       </configuration>
+			     </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
