@@ -48,7 +48,16 @@
             <classifier>mule-plugin</classifier>
         </dependency>
 	</dependencies>
-
+	
+		<distributionManagement>
+			<repository>
+			  <id>Repository</id>
+			  <name>Corporate Repository</name>
+			  <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/97c78d17-bb48-4f76-abb4-e95374cf3578/maven</url>
+			  <layout>default</layout>
+			</repository>
+		</distributionManagement>
+			
 	<repositories>
           <repository>
             <id>anypoint-exchange-v2</id>
