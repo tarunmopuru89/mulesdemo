@@ -26,25 +26,21 @@
 				<version>3.3.0</version>
 			</plugin>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.5</version>
-				<extensions>true</extensions>
-				<configuration>
-				<cloudHubDeployment>
-			      <muleVersion>4.3.0</muleVersion>
-			      <username>mopurutarun</username>
-			      <password>Shaha@1103</password>
-			      <applicationName>deploymule</applicationName>
-			      <environment>Sandbox</environment>   
-			      <workers>1</workers>
-			      <workerType>MICRO</workerType>
-			      <properties>
-				    <maven.compiler.target>1.8</maven.compiler.target>
-				    <maven.compiler.source>1.8</maven.compiler.source>
-				</properties>
-			    </cloudHubDeployment>
-				</configuration>
+				   <groupId>org.mule.tools.maven</groupId>
+				   <artifactId>mule-maven-plugin</artifactId>
+				   <version>3.3.5</version>
+				   <extensions>true</extensions>
+				   <configuration>
+					  <cloudHubDeployment>
+						 <username>mopurutarun</username>
+						 <password>Shaha@1103</password>         
+						 <workers>1</workers>
+						 <workerType>Micro</workerType>
+						 <environment>Sandbox</environment>
+						 <muleVersion>4.2.2</muleVersion>
+						 <applicationName>Demo-Application</applicationName>
+					  </cloudHubDeployment>
+				   </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -63,15 +59,6 @@
             <classifier>mule-plugin</classifier>
         </dependency>
 	</dependencies>
-	
-		<distributionManagement>
-			<repository>
-			  <id>Repository</id>
-			  <name>Corporate Repository</name>
-			  <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/97c78d17-bb48-4f76-abb4-e95374cf3578/maven</url>
-			  <layout>default</layout>
-			</repository>
-		</distributionManagement>
 			
 	<repositories>
           <repository>
